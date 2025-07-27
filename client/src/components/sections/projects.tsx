@@ -182,7 +182,7 @@ export default function Projects() {
 
               {/* Floating Status */}
               <motion.div
-                className="absolute -top-2 -right-2 bg-green-400/20 backdrop-blur-sm border border-green-400/40 rounded-full px-3 py-1"
+                className="absolute -top-2 -left-2 bg-green-400/20 backdrop-blur-sm border border-green-400/40 rounded-full px-3 py-1"
                 initial={{ scale: 0 }}
                 animate={isInView ? { scale: 1 } : {}}
                 transition={{ delay: 0.5 + index * 0.1, type: "spring" }}
