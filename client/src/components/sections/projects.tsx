@@ -182,12 +182,15 @@ export default function Projects() {
 
               {/* Project Number Badge */}
               <motion.div
-                className="absolute -bottom-3 -left-3 bg-black/40 backdrop-blur-md border-2 border-green-400/60 rounded-full w-8 h-8 flex items-center justify-center shadow-lg shadow-green-400/30 hover:bg-black/60 hover:border-green-400 transition-all duration-300"
+                className="absolute -bottom-3 -left-3 w-8 h-8 flex items-center justify-center"
                 initial={{ scale: 0, rotate: -180 }}
                 animate={isInView ? { scale: 1, rotate: 0 } : {}}
                 transition={{ delay: 0.8 + index * 0.15, type: "spring", stiffness: 200 }}
               >
-                <span className="text-green-400 text-sm font-mono font-bold drop-shadow-lg">{index + 1}</span>
+                <div className="relative w-full h-full rounded-full bg-gradient-to-br from-green-400/20 via-black/60 to-green-400/10 backdrop-blur-xl border border-green-400/40 shadow-2xl shadow-green-400/50 before:absolute before:inset-0.5 before:rounded-full before:bg-gradient-to-t before:from-transparent before:via-white/10 before:to-white/20 before:backdrop-blur-sm hover:shadow-green-400/70 hover:border-green-400/60 transition-all duration-500 group">
+                  <div className="absolute inset-1 rounded-full bg-gradient-to-b from-transparent via-green-400/5 to-transparent"></div>
+                  <span className="relative z-10 text-green-400 text-sm font-mono font-bold drop-shadow-2xl flex items-center justify-center w-full h-full group-hover:text-green-300 transition-colors duration-300">{index + 1}</span>
+                </div>
               </motion.div>
             </motion.div>
           ))}
