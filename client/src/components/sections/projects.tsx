@@ -187,9 +187,9 @@ export default function Projects() {
                 animate={isInView ? { scale: 1, rotate: 0 } : {}}
                 transition={{ delay: 0.8 + index * 0.15, type: "spring", stiffness: 200 }}
               >
-                <div className="relative w-full h-full rounded-full bg-gradient-to-br from-green-400/20 via-black/60 to-green-400/10 backdrop-blur-xl border border-green-400/40 shadow-2xl shadow-green-400/50 before:absolute before:inset-0.5 before:rounded-full before:bg-gradient-to-t before:from-transparent before:via-white/10 before:to-white/20 before:backdrop-blur-sm hover:shadow-green-400/70 hover:border-green-400/60 transition-all duration-500 group">
-                  <div className="absolute inset-1 rounded-full bg-gradient-to-b from-transparent via-green-400/5 to-transparent"></div>
-                  <span className="relative z-10 text-green-400 text-sm font-mono font-bold drop-shadow-2xl flex items-center justify-center w-full h-full group-hover:text-green-300 transition-colors duration-300">{index + 1}</span>
+                <div className="relative w-full h-full rounded-full bg-white/5 backdrop-blur-lg shadow-[0_0_20px_rgba(34,197,94,0.3)] before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-br before:from-white/20 before:via-transparent before:to-transparent before:backdrop-blur-sm hover:shadow-[0_0_30px_rgba(34,197,94,0.5)] hover:bg-white/8 transition-all duration-500 group">
+                  <div className="absolute inset-0.5 rounded-full bg-gradient-to-t from-green-400/10 via-transparent to-white/5"></div>
+                  <span className="relative z-10 text-green-400 text-sm font-mono font-bold flex items-center justify-center w-full h-full group-hover:text-green-300 transition-colors duration-300 filter drop-shadow-[0_2px_8px_rgba(34,197,94,0.4)]">{index + 1}</span>
                 </div>
               </motion.div>
             </motion.div>
