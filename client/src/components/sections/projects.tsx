@@ -180,14 +180,14 @@ export default function Projects() {
                 </div>
               </div>
 
-              {/* Floating Status */}
+              {/* Project Number Badge */}
               <motion.div
-                className="absolute -top-2 -left-2 bg-green-400/20 backdrop-blur-sm border border-green-400/40 rounded-full px-3 py-1"
-                initial={{ scale: 0 }}
-                animate={isInView ? { scale: 1 } : {}}
-                transition={{ delay: 0.5 + index * 0.1, type: "spring" }}
+                className="absolute -bottom-3 -left-3 bg-black border-2 border-green-400 rounded-full w-8 h-8 flex items-center justify-center shadow-lg shadow-green-400/30"
+                initial={{ scale: 0, rotate: -180 }}
+                animate={isInView ? { scale: 1, rotate: 0 } : {}}
+                transition={{ delay: 0.8 + index * 0.15, type: "spring", stiffness: 200 }}
               >
-                <span className="text-green-400 text-xs font-mono">#{index + 1}</span>
+                <span className="text-green-400 text-sm font-mono font-bold">{index + 1}</span>
               </motion.div>
             </motion.div>
           ))}
