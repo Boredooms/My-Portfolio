@@ -182,7 +182,7 @@ export default function Projects() {
 
               {/* Project Number Badge */}
               <motion.div
-                className="absolute -bottom-3 -left-3 w-8 h-8 flex items-center justify-center"
+                className="absolute -top-2 -right-2 w-8 h-8 flex items-center justify-center z-20"
                 initial={{ scale: 0, rotate: -180 }}
                 animate={isInView ? { scale: 1, rotate: 0 } : {}}
                 transition={{ delay: 0.8 + index * 0.15, type: "spring", stiffness: 200 }}
