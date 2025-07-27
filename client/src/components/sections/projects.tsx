@@ -115,7 +115,7 @@ export default function Projects() {
                   </div>
                   <div className="flex items-center gap-2">
                     <project.icon className="w-4 h-4 text-green-400" />
-                    <span className="text-xs text-green-400 font-mono">{project.status}</span>
+                    <span className="text-xs font-mono bg-green-400 text-black px-2 py-0.5 rounded font-bold">{project.status}</span>
                   </div>
                 </div>
 
