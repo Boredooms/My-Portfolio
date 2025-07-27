@@ -1,0 +1,592 @@
+/*
+ * Ultimate Coding Typography Glitch Effects Library
+ * Enhanced glitch effects specifically designed for developer portfolios
+ * Author: Devargho Chakraborty
+ * Created: January 27, 2025
+ */
+
+/* ========================================
+   ADVANCED PROGRAMMING LANGUAGE GLITCHES
+   ======================================== */
+
+/* JavaScript/TypeScript function glitch */
+.js-function-glitch {
+  position: relative;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-weight: 600;
+  animation: function-declaration-error 4.5s infinite;
+}
+
+.js-function-glitch::before {
+  content: "const " attr(data-text) " = () => {";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #f7df1e;
+  animation: arrow-function-glitch 3.6s infinite;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.js-function-glitch::after {
+  content: "export default " attr(data-text) ";";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #61dafb;
+  animation: export-statement-glitch 3.2s infinite;
+  z-index: -2;
+  opacity: 0.6;
+}
+
+/* React/JSX component glitch */
+.react-component-glitch {
+  position: relative;
+  font-family: 'Fira Code', monospace;
+  animation: component-render-error 4.1s infinite;
+}
+
+.react-component-glitch::before {
+  content: "<" attr(data-text) " />";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #61dafb;
+  animation: jsx-self-closing-glitch 3.4s infinite;
+  z-index: -1;
+}
+
+.react-component-glitch::after {
+  content: "useState(" attr(data-text) ")";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ff6b6b;
+  animation: react-hook-glitch 2.9s infinite;
+  z-index: -2;
+}
+
+/* Python function glitch */
+.python-function-glitch {
+  position: relative;
+  font-family: 'Source Code Pro', monospace;
+  animation: python-syntax-error 4.2s infinite;
+}
+
+.python-function-glitch::before {
+  content: "def " attr(data-text) "(self):";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #3776ab;
+  animation: python-def-glitch 3.5s infinite;
+  z-index: -1;
+}
+
+.python-function-glitch::after {
+  content: "return " attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffd43b;
+  animation: python-return-glitch 3.1s infinite;
+  z-index: -2;
+}
+
+/* Git command glitch */
+.git-command-glitch {
+  position: relative;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  animation: git-merge-conflict 4.3s infinite;
+}
+
+.git-command-glitch::before {
+  content: "git commit -m '" attr(data-text) "'";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #f14e32;
+  animation: git-commit-glitch 3.7s infinite;
+  z-index: -1;
+}
+
+.git-command-glitch::after {
+  content: "git push origin " attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #00d084;
+  animation: git-push-glitch 3.3s infinite;
+  z-index: -2;
+}
+
+/* Database SQL glitch */
+.sql-query-glitch {
+  position: relative;
+  font-family: 'Roboto Mono', monospace;
+  animation: sql-syntax-error 4.4s infinite;
+}
+
+.sql-query-glitch::before {
+  content: "SELECT * FROM " attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #336791;
+  animation: sql-select-glitch 3.8s infinite;
+  z-index: -1;
+}
+
+.sql-query-glitch::after {
+  content: "WHERE " attr(data-text) " = ?";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ff6b35;
+  animation: sql-where-glitch 3.4s infinite;
+  z-index: -2;
+}
+
+/* API endpoint glitch */
+.api-endpoint-glitch {
+  position: relative;
+  font-family: 'Fira Code', monospace;
+  animation: api-request-timeout 4s infinite;
+}
+
+.api-endpoint-glitch::before {
+  content: "GET /api/" attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #00a8cc;
+  animation: http-get-glitch 3.5s infinite;
+  z-index: -1;
+}
+
+.api-endpoint-glitch::after {
+  content: "POST /api/" attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ff6b6b;
+  animation: http-post-glitch 3.1s infinite;
+  z-index: -2;
+}
+
+/* ========================================
+   FRAMEWORK-SPECIFIC GLITCHES
+   ======================================== */
+
+/* Next.js specific glitch */
+.nextjs-glitch {
+  position: relative;
+  font-family: 'JetBrains Mono', monospace;
+  animation: nextjs-build-error 4.1s infinite;
+}
+
+.nextjs-glitch::before {
+  content: "export { " attr(data-text) " }";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000000;
+  animation: nextjs-export-glitch 3.6s infinite;
+  z-index: -1;
+}
+
+.nextjs-glitch::after {
+  content: "import " attr(data-text) " from './";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  animation: nextjs-import-glitch 3.2s infinite;
+  z-index: -2;
+}
+
+/* Docker container glitch */
+.docker-glitch {
+  position: relative;
+  font-family: 'Source Code Pro', monospace;
+  animation: container-crash 4.2s infinite;
+}
+
+.docker-glitch::before {
+  content: "FROM " attr(data-text) ":latest";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #2496ed;
+  animation: dockerfile-from-glitch 3.7s infinite;
+  z-index: -1;
+}
+
+.docker-glitch::after {
+  content: "RUN npm install " attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ff6b35;
+  animation: dockerfile-run-glitch 3.3s infinite;
+  z-index: -2;
+}
+
+/* ========================================
+   TERMINAL AND SYSTEM GLITCHES
+   ======================================== */
+
+/* Vim editor glitch */
+.vim-glitch {
+  position: relative;
+  font-family: 'Roboto Mono', monospace;
+  animation: vim-buffer-corruption 4.3s infinite;
+}
+
+.vim-glitch::before {
+  content: ":wq " attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #019833;
+  animation: vim-command-glitch 3.8s infinite;
+  z-index: -1;
+}
+
+.vim-glitch::after {
+  content: "i" attr(data-text) "<ESC>";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ff4757;
+  animation: vim-insert-glitch 3.4s infinite;
+  z-index: -2;
+}
+
+/* Package manager glitch */
+.npm-glitch {
+  position: relative;
+  font-family: 'JetBrains Mono', monospace;
+  animation: package-dependency-hell 4.4s infinite;
+}
+
+.npm-glitch::before {
+  content: "npm install " attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #cb3837;
+  animation: npm-install-glitch 3.9s infinite;
+  z-index: -1;
+}
+
+.npm-glitch::after {
+  content: "yarn add " attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #2c8ebb;
+  animation: yarn-add-glitch 3.5s infinite;
+  z-index: -2;
+}
+
+/* ========================================
+   KEYFRAME ANIMATIONS
+   ======================================== */
+
+/* JavaScript/TypeScript animations */
+@keyframes function-declaration-error {
+  0%, 95%, 100% { transform: translate(0); filter: brightness(1) hue-rotate(0deg); }
+  96% { transform: translate(-3px, 2px) skewX(1deg); filter: brightness(1.3) hue-rotate(45deg); }
+  97% { transform: translate(4px, -1px) skewX(-2deg); filter: brightness(0.8) hue-rotate(-90deg); }
+  98% { transform: translate(-2px, 3px); filter: brightness(1.2) hue-rotate(180deg); }
+}
+
+@keyframes arrow-function-glitch {
+  0%, 91%, 100% { transform: translateX(0) scaleX(1); opacity: 0.7; }
+  92% { transform: translateX(-5px) scaleX(1.1); opacity: 0.9; }
+  93% { transform: translateX(6px) scaleX(0.9); opacity: 0.5; }
+  94% { transform: translateX(-2px) scaleX(1.05); opacity: 0.8; }
+}
+
+@keyframes export-statement-glitch {
+  0%, 87%, 100% { transform: translateX(0); opacity: 0.6; }
+  88% { transform: translateX(3px) skewX(2deg); opacity: 0.8; }
+  89% { transform: translateX(-4px) skewX(-1deg); opacity: 0.4; }
+  90% { transform: translateX(1px); opacity: 0.7; }
+}
+
+/* React animations */
+@keyframes component-render-error {
+  0%, 93%, 100% { transform: translate(0); filter: contrast(1) saturate(1); }
+  94% { transform: translate(-4px, 2px) rotateZ(0.5deg); filter: contrast(1.4) saturate(1.5); }
+  95% { transform: translate(5px, -3px) rotateZ(-0.8deg); filter: contrast(0.8) saturate(0.7); }
+  96% { transform: translate(-1px, 1px); filter: contrast(1.2) saturate(1.3); }
+}
+
+@keyframes jsx-self-closing-glitch {
+  0%, 89%, 100% { transform: translateY(0) scaleY(1); }
+  90% { transform: translateY(-3px) scaleY(1.2); }
+  91% { transform: translateY(4px) scaleY(0.8); }
+  92% { transform: translateY(-1px) scaleY(1.1); }
+}
+
+@keyframes react-hook-glitch {
+  0%, 85%, 100% { transform: translateY(0); }
+  86% { transform: translateY(2px) skewY(1deg); }
+  87% { transform: translateY(-3px) skewY(-2deg); }
+  88% { transform: translateY(1px) skewY(0.5deg); }
+}
+
+/* Python animations */
+@keyframes python-syntax-error {
+  0%, 94%, 100% { transform: translate(0); filter: brightness(1) contrast(1); }
+  95% { transform: translate(-3px, 1px) skewX(1.5deg); filter: brightness(1.4) contrast(1.3); }
+  96% { transform: translate(4px, -2px) skewX(-1deg); filter: brightness(0.7) contrast(1.5); }
+  97% { transform: translate(-2px, 2px); filter: brightness(1.1) contrast(0.9); }
+}
+
+@keyframes python-def-glitch {
+  0%, 90%, 100% { transform: translateX(0); }
+  91% { transform: translateX(-4px) scaleX(1.15); }
+  92% { transform: translateX(5px) scaleX(0.85); }
+  93% { transform: translateX(-1px) scaleX(1.05); }
+}
+
+@keyframes python-return-glitch {
+  0%, 86%, 100% { transform: translateX(0); }
+  87% { transform: translateX(2px) scaleX(0.95); }
+  88% { transform: translateX(-3px) scaleX(1.1); }
+  89% { transform: translateX(1px) scaleX(1.02); }
+}
+
+/* Git animations */
+@keyframes git-merge-conflict {
+  0%, 92%, 100% { transform: translate(0); filter: brightness(1) hue-rotate(0deg); }
+  93% { transform: translate(-5px, 3px) skewX(2deg); filter: brightness(1.5) hue-rotate(90deg); }
+  94% { transform: translate(6px, -2px) skewX(-1.5deg); filter: brightness(0.6) hue-rotate(-45deg); }
+  95% { transform: translate(-2px, 1px); filter: brightness(1.2) hue-rotate(180deg); }
+}
+
+@keyframes git-commit-glitch {
+  0%, 88%, 100% { transform: translateY(0) skewY(0); }
+  89% { transform: translateY(-2px) skewY(1deg); }
+  90% { transform: translateY(3px) skewY(-2deg); }
+  91% { transform: translateY(-1px) skewY(0.5deg); }
+}
+
+@keyframes git-push-glitch {
+  0%, 84%, 100% { transform: translateY(0); }
+  85% { transform: translateY(2px) scaleY(1.08); }
+  86% { transform: translateY(-4px) scaleY(0.92); }
+  87% { transform: translateY(1px) scaleY(1.03); }
+}
+
+/* SQL animations */
+@keyframes sql-syntax-error {
+  0%, 91%, 100% { transform: translate(0); filter: saturate(1) brightness(1); }
+  92% { transform: translate(-4px, 2px) rotateZ(0.8deg); filter: saturate(1.6) brightness(1.3); }
+  93% { transform: translate(5px, -1px) rotateZ(-0.5deg); filter: saturate(0.4) brightness(0.8); }
+  94% { transform: translate(-1px, 3px); filter: saturate(1.2) brightness(1.1); }
+}
+
+@keyframes sql-select-glitch {
+  0%, 87%, 100% { transform: translateX(0) scaleX(1); }
+  88% { transform: translateX(-3px) scaleX(1.12); }
+  89% { transform: translateX(4px) scaleX(0.88); }
+  90% { transform: translateX(-1px) scaleX(1.06); }
+}
+
+@keyframes sql-where-glitch {
+  0%, 83%, 100% { transform: translateX(0); }
+  84% { transform: translateX(2px) skewX(1.5deg); }
+  85% { transform: translateX(-3px) skewX(-2deg); }
+  86% { transform: translateX(1px) skewX(0.5deg); }
+}
+
+/* API animations */
+@keyframes api-request-timeout {
+  0%, 89%, 100% { transform: translate(0); filter: brightness(1) contrast(1); }
+  90% { transform: translate(-3px, 2px) skewX(1deg); filter: brightness(1.4) contrast(1.2); }
+  91% { transform: translate(4px, -1px) skewX(-2deg); filter: brightness(0.7) contrast(1.4); }
+  92% { transform: translate(-1px, 2px); filter: brightness(1.1) contrast(0.9); }
+}
+
+@keyframes http-get-glitch {
+  0%, 85%, 100% { transform: translateY(0); }
+  86% { transform: translateY(-2px) scaleY(1.1); }
+  87% { transform: translateY(3px) scaleY(0.9); }
+  88% { transform: translateY(-1px) scaleY(1.05); }
+}
+
+@keyframes http-post-glitch {
+  0%, 81%, 100% { transform: translateY(0); }
+  82% { transform: translateY(2px) scaleY(0.95); }
+  83% { transform: translateY(-3px) scaleY(1.15); }
+  84% { transform: translateY(1px) scaleY(1.02); }
+}
+
+/* Framework animations */
+@keyframes nextjs-build-error {
+  0%, 93%, 100% { transform: translate(0); filter: invert(0) brightness(1); }
+  94% { transform: translate(-3px, 1px) skewX(1deg); filter: invert(0.2) brightness(1.3); }
+  95% { transform: translate(4px, -2px) skewX(-1.5deg); filter: invert(0.8) brightness(0.8); }
+  96% { transform: translate(-1px, 2px); filter: invert(0.1) brightness(1.1); }
+}
+
+@keyframes nextjs-export-glitch {
+  0%, 89%, 100% { transform: translateX(0); }
+  90% { transform: translateX(-4px) scaleX(1.08); }
+  91% { transform: translateX(5px) scaleX(0.92); }
+  92% { transform: translateX(-1px) scaleX(1.04); }
+}
+
+@keyframes nextjs-import-glitch {
+  0%, 85%, 100% { transform: translateX(0); }
+  86% { transform: translateX(2px) scaleX(0.96); }
+  87% { transform: translateX(-3px) scaleX(1.12); }
+  88% { transform: translateX(1px) scaleX(1.02); }
+}
+
+/* Docker animations */
+@keyframes container-crash {
+  0%, 91%, 100% { transform: translate(0); filter: brightness(1) hue-rotate(0deg); }
+  92% { transform: translate(-4px, 3px) skewX(2deg); filter: brightness(1.4) hue-rotate(45deg); }
+  93% { transform: translate(5px, -2px) skewX(-1deg); filter: brightness(0.7) hue-rotate(-90deg); }
+  94% { transform: translate(-2px, 1px); filter: brightness(1.2) hue-rotate(180deg); }
+}
+
+@keyframes dockerfile-from-glitch {
+  0%, 87%, 100% { transform: translateY(0) skewY(0); }
+  88% { transform: translateY(-2px) skewY(1deg); }
+  89% { transform: translateY(3px) skewY(-1.5deg); }
+  90% { transform: translateY(-1px) skewY(0.5deg); }
+}
+
+@keyframes dockerfile-run-glitch {
+  0%, 83%, 100% { transform: translateY(0); }
+  84% { transform: translateY(2px) scaleY(1.06); }
+  85% { transform: translateY(-3px) scaleY(0.94); }
+  86% { transform: translateY(1px) scaleY(1.03); }
+}
+
+/* Terminal animations */
+@keyframes vim-buffer-corruption {
+  0%, 92%, 100% { transform: translate(0); filter: brightness(1) contrast(1); }
+  93% { transform: translate(-3px, 2px) skewX(1.5deg); filter: brightness(1.3) contrast(1.4); }
+  94% { transform: translate(4px, -1px) skewX(-1deg); filter: brightness(0.8) contrast(1.2); }
+  95% { transform: translate(-1px, 3px); filter: brightness(1.1) contrast(0.9); }
+}
+
+@keyframes vim-command-glitch {
+  0%, 88%, 100% { transform: translateX(0); }
+  89% { transform: translateX(-3px) scaleX(1.1); }
+  90% { transform: translateX(4px) scaleX(0.9); }
+  91% { transform: translateX(-1px) scaleX(1.05); }
+}
+
+@keyframes vim-insert-glitch {
+  0%, 84%, 100% { transform: translateX(0); }
+  85% { transform: translateX(2px) scaleX(0.95); }
+  86% { transform: translateX(-3px) scaleX(1.15); }
+  87% { transform: translateX(1px) scaleX(1.02); }
+}
+
+/* Package manager animations */
+@keyframes package-dependency-hell {
+  0%, 90%, 100% { transform: translate(0); filter: brightness(1) saturate(1); }
+  91% { transform: translate(-5px, 2px) skewX(2deg); filter: brightness(1.5) saturate(1.4); }
+  92% { transform: translate(6px, -3px) skewX(-1.5deg); filter: brightness(0.6) saturate(0.8); }
+  93% { transform: translate(-2px, 1px); filter: brightness(1.2) saturate(1.2); }
+}
+
+@keyframes npm-install-glitch {
+  0%, 86%, 100% { transform: translateY(0) skewY(0); }
+  87% { transform: translateY(-2px) skewY(1deg); }
+  88% { transform: translateY(3px) skewY(-2deg); }
+  89% { transform: translateY(-1px) skewY(0.5deg); }
+}
+
+@keyframes yarn-add-glitch {
+  0%, 82%, 100% { transform: translateY(0); }
+  83% { transform: translateY(2px) scaleY(1.08); }
+  84% { transform: translateY(-3px) scaleY(0.92); }
+  85% { transform: translateY(1px) scaleY(1.04); }
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+/* Intensity variations */
+.glitch-subtle { animation-duration: 6s; }
+.glitch-normal { animation-duration: 4s; }
+.glitch-intense { animation-duration: 2s; }
+.glitch-extreme { animation-duration: 1s; }
+
+/* Color scheme variations */
+.glitch-dark-theme::before { filter: brightness(0.8) contrast(1.2); }
+.glitch-light-theme::before { filter: brightness(1.2) contrast(0.8); }
+.glitch-neon::before { filter: brightness(2) saturate(2); }
+.glitch-retro::before { filter: sepia(0.8) hue-rotate(45deg); }
+
+/* Enhanced header visibility */
+.glitch-header, 
+[class*="-header"] h1,
+[class*="-header"] .glitch-header {
+  font-weight: 900 !important;
+  text-shadow: 
+    0 0 15px rgba(255, 255, 255, 1),
+    0 0 30px rgba(0, 255, 65, 0.9),
+    0 0 45px rgba(0, 255, 65, 0.7),
+    4px 0 0 rgba(255, 0, 64, 0.5),
+    -4px 0 0 rgba(0, 255, 255, 0.5) !important;
+  filter: brightness(1.3) contrast(1.2) !important;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .glitch-header,
+  .glitch,
+  [class*="glitch"]::before,
+  [class*="glitch"]::after {
+    animation-duration: 6s; /* Slower animations on mobile */
+  }
+  
+  /* Ensure headers remain readable on mobile */
+  .glitch-header, 
+  [class*="-header"] h1 {
+    font-weight: 900 !important;
+    text-shadow: 
+      0 0 10px rgba(255, 255, 255, 1),
+      0 0 20px rgba(0, 255, 65, 0.9) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glitch-header,
+  .glitch,
+  [class*="glitch"] {
+    animation: none;
+  }
+  
+  [class*="glitch"]::before,
+  [class*="glitch"]::after {
+    animation: none;
+    opacity: 0.3;
+  }
+}
+
+/* Performance optimization */
+[class*="glitch"] {
+  will-change: transform, filter, opacity;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+[class*="glitch"]::before,
+[class*="glitch"]::after {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
