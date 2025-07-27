@@ -60,7 +60,7 @@ export default function Hero() {
                 <span className="text-sm font-mono">devargho@creative-terminal</span>
               </div>
             </div>
-            <div className="text-green-400/60 text-xs font-mono">
+            <div className="text-green-400 text-xs font-mono">
               <LiveClock />
             </div>
           </div>

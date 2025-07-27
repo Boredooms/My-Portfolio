@@ -25,6 +25,7 @@ This is a professional, high-end portfolio website for Devargho Chakraborty, a F
 - ✅ Replaced static time display with live updating clock
 - ✅ Updates every second with proper cleanup on component unmount
 - ✅ Integrated into hero section terminal header
+- ✅ Updated clock text color to bright green (text-green-400)
 
 ### Portfolio Content and Link Updates
 - ✅ Updated hero section button from "./view_projects.sh" to "./view_achievements.sh"
