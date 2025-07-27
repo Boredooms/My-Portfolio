@@ -2,20 +2,6 @@
   "version": 2,
   "buildCommand": "vite build",
   "outputDirectory": "dist/public",
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "routes": [
-    {
-      "src": "/My_resume.pdf",
-      "dest": "/My_resume.pdf",
-      "headers": {
-        "Content-Type": "application/pdf",
-        "Content-Disposition": "attachment; filename=\"My_resume.pdf\""
-      }
-    },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
-  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -31,6 +17,19 @@
         {
           "key": "X-XSS-Protection",
           "value": "1; mode=block"
+        }
+      ]
+    },
+    {
+      "source": "/My_resume.pdf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"My_resume.pdf\""
         }
       ]
     }
