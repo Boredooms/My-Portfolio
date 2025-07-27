@@ -6,6 +6,14 @@ This is a professional, high-end portfolio website for Devargho Chakraborty, a F
 
 ## Recent Changes (January 27, 2025)
 
+### Portfolio Content and Link Updates
+- ✅ Updated hero section button from "./view_projects.sh" to "./view_achievements.sh"
+- ✅ Replaced "github --projects" button with "wget --resume" button that downloads resume PDF
+- ✅ Fixed git remote URL from incorrect "Boredoms" to correct "Boredooms" GitHub profile
+- ✅ Updated "View GitHub" button to redirect to https://github.com/Boredooms
+- ✅ Updated "All Projects" button to redirect to https://github.com/Boredooms?tab=projects
+- ✅ Added resume download functionality with proper PDF file serving
+
 ### Migration to Replit Environment
 - ✅ Successfully migrated from Replit Agent to standard Replit environment
 - ✅ Fixed dependencies and workflow configurations for seamless deployment

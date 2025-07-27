@@ -211,7 +211,7 @@ export default function Projects() {
               </div>
               <div className="text-gray-300 font-mono text-xs">
                 <TypingText 
-                  text="https://github.com/Boredoms"
+                  text="https://github.com/Boredooms"
                   speed={40}
                   delay={2200}
                 />
@@ -223,7 +223,7 @@ export default function Projects() {
                 className="flex gap-4 justify-center pt-4"
               >
                 <motion.a
-                  href="https://github.com/Boredoms"
+                  href="https://github.com/Boredooms"
                   target="_blank"
                   rel="noopener noreferrer"
                   initial={{ opacity: 0, x: -30 }}
@@ -237,7 +237,7 @@ export default function Projects() {
                   View GitHub
                 </motion.a>
                 <motion.a
-                  href="https://github.com/Boredoms?tab=repositories"
+                  href="https://github.com/Boredooms?tab=projects"
                   target="_blank"
                   rel="noopener noreferrer"
                   initial={{ opacity: 0, x: 30 }}

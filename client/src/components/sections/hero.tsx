@@ -143,18 +143,17 @@ export default function Hero() {
                 className="group bg-green-400 text-black px-6 py-3 rounded-lg font-mono font-medium hover:bg-green-300 transition-all duration-300 flex items-center gap-2"
               >
                 <Code className="w-4 h-4" />
-                ./view_projects.sh
+                ./view_achievements.sh
                 <span className="opacity-60 group-hover:opacity-100">↗</span>
               </button>
               
               <a
-                href="https://github.com/Boredooms?tab=projects"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/My_resume.pdf"
+                download="My_resume.pdf"
                 className="border border-green-400 text-green-400 px-6 py-3 rounded-lg font-mono font-medium hover:bg-green-400/10 transition-all duration-300 flex items-center gap-2"
               >
                 <ExternalLink className="w-4 h-4" />
-                github --projects
+                wget --resume
               </a>
             </motion.div>
           </div>
