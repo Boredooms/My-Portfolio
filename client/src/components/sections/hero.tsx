@@ -5,6 +5,7 @@ import ScrollTypedText from "@/components/ui/scroll-typed-text";
 import HeroGlitchText from "@/components/ui/hero-glitch-text";
 import MatrixRain from "@/components/ui/matrix-rain";
 import FloatingElements from "@/components/ui/floating-elements";
+import LiveClock from "@/components/ui/live-clock";
 
 export default function Hero() {
   const [currentCommand, setCurrentCommand] = useState(0);
@@ -60,7 +61,7 @@ export default function Hero() {
               </div>
             </div>
             <div className="text-green-400/60 text-xs font-mono">
-              {new Date().toLocaleTimeString()}
+              <LiveClock />
             </div>
           </div>
 
