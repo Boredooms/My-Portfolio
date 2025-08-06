@@ -20,7 +20,7 @@ A modern, cyberpunk-themed portfolio website showcasing achievements, skills, an
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Boredooms/portfolio.git
+git clone https://github.com/Boredooms/My-Portfolio
 cd portfolio
 ```
 
@@ -94,7 +94,7 @@ MIT License - feel free to use this project for your own portfolio!
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Boredooms/portfolio/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Boredooms/My-Portfolio/issues).
 
 ## 📞 Contact
 
